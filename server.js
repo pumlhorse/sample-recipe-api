@@ -84,7 +84,7 @@ app.del("/recipes/:recipeId", function (request, response) {
     }
     else throw e;
   }
-  response.sendStatus(200);
+  response.sendStatus(204);
 });
 
 app.get("/recipe_cache", function (request, response) {
